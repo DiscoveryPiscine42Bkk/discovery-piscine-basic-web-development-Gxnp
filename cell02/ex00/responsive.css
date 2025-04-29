@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.mainbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.firstcell,.secondcell{
+    border: 1px black solid;
+    width: 100vw;
+    border: px solid #73AD21;
+    padding: 30px;
+}
+.firstcell{
+    background-color: cadetblue;
+}
+.secondcell{
+    background-color: burlywood;
+}
