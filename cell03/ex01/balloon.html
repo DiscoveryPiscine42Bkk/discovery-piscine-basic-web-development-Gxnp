@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .balloon{
+            aspect-ratio: 1 / 1;
+            width: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div  id="balloon" class="balloon" onpointerout="decreaseBall()" onclick="increaseBall()"></div>
+</body>
+<script>
+        let listColor = ["red", "green", "blue"]
+        console.log(listColor.length)
+        var index = 0
+        let ball = document.getElementById("balloon")
+       
+
+    function increaseBall() {
+        var checkSize = parseInt(window.getComputedStyle(ball).width)
+        if(checkSize > 420 || checkSize < 200 ){
+            console.log("more than 420 || lower than 200 stop")
+            ball.style.width = 200+"px";
+            return
+        }else{
+
+        var cursize = parseInt(window.getComputedStyle(ball).width)
+        
+        console.log(cursize,typeof(cursize))
+        ball.style.width = cursize+10+"px";
+        index += 1
+        if (index > 2){
+            index = 0
+        }
+        ball.style.backgroundColor = listColor[index];
+        console.log("listColor[index]")
+
+        console.log(ball.style.width)
+    }
+    }
+    function decreaseBall() {
+        var checkSize = parseInt(window.getComputedStyle(ball).width)
+        index -= 1
+        if (index < 0){
+            index = 2
+        }
+        ball.style.backgroundColor = listColor[index]
+        if(checkSize > 420 || checkSize <= 200 ){
+            console.log("more than 420 || lower than 200 stop")
+            ball.style.width = 200+"px";
+            return
+        }else{
+
+            var cursize = parseInt(window.getComputedStyle(ball).width)
+            ball.style.width = cursize-5+"px";
+        index -= 1
+        if (index < 0){
+            index = 2
+        }
+        ball.style.backgroundColor = listColor[index];
+        console.log("listColor[2]")
+            console.log("Point Move Out",ball.style.width)
+        }
+    }
+</script>
+</html>

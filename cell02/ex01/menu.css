@@ -3,41 +3,35 @@
     margin: 0;
     font-family:monospace;
 }
-ul {
-    list-style: none;
-    background: #8c52ff;
+
+li {
+    background-color:#5f9ea0;
 }
 
-ul li {
-    display: inline-block;
-    position: relative;
+a:hover {
+    background-color:#457376;
+}
+
+li {
+    display: inline-flexbox;
 }
 
 ul li a {
     display: block;
-    padding: 20px 25px;
-    color: #FFF;
+    padding: 25px 30px;
+    color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-ul li ul.dropdown li {
-    display: block;
-}
-
-ul li ul.dropdown {
+.dropdown {
     width: 100%;
-    background: #8c52ff;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
-ul li a:hover {
-    background: #6d30e9;
-}
-
-ul li:hover ul.dropdown {
+li:hover .dropdown {
     display: block;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="backgroound.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="maindiv">
+        <button id="colorbutton" class="colorbutton" onclick="getRandomColor()">Oh No Don't Click Me !</button>
+    </div>
+</body>
+<script>
+
+    function getRandomColor() {
+        let test = document.getElementById("colorbutton")
+        var curwidth = parseFloat(window.getComputedStyle(test).width)
+        test.style.scale = curwidth+0.5;
+        console.log(window.getComputedStyle(test).width) 
+
+        let red = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let newColor = "rgb("+ red +  "," + green + "," + blue +")";
+        document.body.style.backgroundColor = newColor;
+    }
+
+    </script>
+</html>

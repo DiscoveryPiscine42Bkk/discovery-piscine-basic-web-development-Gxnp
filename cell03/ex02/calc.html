@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="leftmember" />
+    <select name="operator" id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input type="number" id="rightmember" />
+    <button type="submit" onclick="onSubmit()">Try me!</button>
+  </body>
+  <script>
+    function onSubmit() {
+      // let firstNum = (document.getElementById("leftmember")).value
+      // console.log(firstNum)
+      checkSwtich();
+    }
+
+    function checkSwtich() {
+      let firstNum = parseInt(document.getElementById("leftmember").value);
+      let chooseOperator = document.getElementById("operator").value;
+      let secondNum = parseInt(document.getElementById("rightmember").value);
+      var result = 0;
+
+      if (firstNum < 0 || secondNum < 0) {
+        alert("Error : (");
+        console.log("Error :(");
+      }
+      switch (chooseOperator) {
+        case "+":
+          result = firstNum + secondNum;
+          break;
+        case "-":
+          result = firstNum - secondNum;
+          break;
+        case "*":
+          result = firstNum * secondNum;
+          break;
+        case "/":
+          if (secondNum == 0) {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+          }
+          result = firstNum / secondNum;
+          break;
+        case "%":
+          if (secondNum == 0) {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+            return
+          }
+          result = firstNum % secondNum;
+          break;
+      }
+      alert(result);
+      console.log(result)
+    }
+    setInterval(function(){
+        alert("Please, use me...")
+}, 30000)
+  </script>
+</html>

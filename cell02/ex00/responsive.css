@@ -10,7 +10,6 @@ body{
 .firstcell,.secondcell{
     border: 1px black solid;
     width: 100vw;
-    border: px solid #73AD21;
     padding: 30px;
 }
 .firstcell{
