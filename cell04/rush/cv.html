@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav
+      class="bg-white fixed top-0 z-50 flex justify-center items-center w-full"
+    >
+      <ul class="flex justify-center gap-15 relative">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="parallax section-full fade-in-section relative">
+      <div
+        class="text-white gap-8 intro-box flex justify-center items-center flex-col lg:flex-row"
+      >
+        <img
+          src="https://i.giphy.com/14vsccLtf2A8ZW.webp"
+          alt="Profile"
+          class="w-[30vw] lg:w-[40vh] rounded-3xl"
+        />
+        <div class="text-center lg:text-start">
+          <p class="font-bold text-[6vw] lg:text-[5vw]">Napon Narkphan</p>
+          <hr class="bg-white h-[2px] pb-4" />
+          <p class="text-[4vw] font-extralight text">Full Stuck Developer</p>
+          <p class="text-[2vw] lg:text[3vw] font-black italic">
+            I'm Dek IT'23 @ KMITL
+          </p>
+        </div>
+      </div>
+      <video id="moodvideo" autoplay loop>
+        <source
+          src="../source/3125448-uhd_3840_2160_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <img
+        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTBzYm5qbnR6MGdpY3F1YjgyamY5bmVtaXdqcHFib2l6NjlyaGo0NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iSB6wAwDr0oQU/giphy.gif"
+        class="absolute bottom-0 simson"
+      />
+    </section>
+
+    <section
+      id="experience"
+      class="flex justify-center flex-col items-center text-center fade-in-section bg-gray-900 lg:h-[100vh] lg:gap-18 xl:gap-10"
+    >
+    <div class="head">
+        <p class="text-white text-[4vw] font-semibold pt-5 lg:pt-0 overflow-hidden">Skills</p>
+    </div>
+    
+      <div>
+        <div class="py-10 lg:py-0">
+          <!-- <img src="https://c.tenor.com/CgGUXc-LDc4AAAAC/tenor.gif" alt="hackerman"> -->
+          <div class="skill-section">
+            <div
+              class="skills-containe flex flex-col text-white gap-y-10 xl:gap-y-40"
+            >
+              <div
+                class="flex flex-col lg:flex-row gap-x-4 lg:gap-x-7 xl:gap-x-20"
+              >
+                <div class="skill-card">
+                  <img
+                    src="../source/realhtml.png"
+                    class="skill-img scale-125"
+                    alt=""
+                  />
+                  <div class="skill-level bg-orange-500/15 border-orange-500 text-orange-500">98%</div>
+                  <h1 class="skill-name">HTML</h1>
+                  <p class="skill-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequatur, delectus!
+                  </p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    src="../source/tailwind.png"                  
+                    class="skill-img"
+                    alt=""
+                  />
+                  <div class="skill-level bg-blue-400/15 border-blue-400 text-blue-400">98%</div>
+                  <h1 class="skill-name">TAILWIND CSS</h1>
+                  <p class="skill-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequatur, delectus!
+                  </p>
+                </div>
+                <div class="skill-card">
+                  <img
+                    src="../source/javascript.png"
+                  class="skill-img"
+                    alt=""
+                  />
+                  <div class="skill-level bg-yellow-300/15 border-yellow-300 text-yellow-300">98%</div>
+                  <h1 class="skill-name">JAVASCRIPT</h1>
+                  <p class="skill-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequatur, delectus!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col lg:flex-row gap-x-4 lg:gap-x-7 xl:gap-x-20"
+              >
+                <div class="skill-card">
+                  <img
+                    src="../source/react.png"
+                  class="skill-img"
+                    alt=""
+                  />
+                  <div class="skill-level bg-cyan-400/15 border-cyan-400 text-cyan-400">98%</div>
+                  <h1 class="skill-name">REACT JS</h1>
+                  <p class="skill-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequatur, delectus!
+                  </p>
+                </div>
+                <div class="skill-card">
+                  <img
+src="../source/icons8-nextjs-220.png"
+                  class="skill-img"
+                    alt=""
+                  />
+                  <div class="skill-level bg-white/15 border-white-500 text-white-500">98%</div>
+                  <h1 class="skill-name">NEXT JS</h1>
+                  <p class="skill-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequatur, delectus!
+                  </p>
+                </div>
+                <div class="skill-card">
+                  <img
+src="../source/image-removebg-preview.png"
+                  class="skill-img"
+                    alt=""
+                  />
+                  <div class="skill-level bg-green-400/15 border-green-400 text-green-400">98%</div>
+                  <h1 class="skill-name">NODE JS</h1>
+                  <p class="skill-info">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Consequatur, delectus!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="parallax section-full fade-in-section">
+      <video id="moodvideo" autoplay loop>
+        <source
+          src="../source/3125448-uhd_3840_2160_25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </section>
+  </body>
+</html>
