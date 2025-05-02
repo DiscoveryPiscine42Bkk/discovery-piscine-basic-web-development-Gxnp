@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <nav
-      class="bg-white fixed top-0 z-50 flex justify-center items-center w-full"
+      class="flex bg-white/10 text-white backdrop-blur-md fixed top-0 z-50 justify-center items-center w-full"
     >
-      <ul class="flex justify-center gap-15 relative py-3">
-        <li class="hover:bg-slate-200 hover:font-bold px-2 py-1 rounded-lg transition-all"><a href="#about">About</a></li>
-        <li class="hover:bg-slate-200 hover:font-bold px-2 py-1 rounded-lg transition-all"><a href="#experience">Experience</a></li>
-        <li class="hover:bg-slate-200 hover:font-bold px-2 py-1 rounded-lg transition-all"><a href="#contact">Contact</a></li>
+      <ul class="flex justify-center gap-10 lg:gap-16 relative py-3">
+        <li
+          class="hover:bg-slate-200 hover:font-bold hover:text-black px-2 py-1 rounded-lg transition-all"
+        >
+          <a href="landing.html">Home</a>
+        </li>
+        <li
+          class="hover:bg-slate-200 hover:font-bold hover:text-black px-2 py-1 rounded-lg transition-all"
+        >
+          <a href="#about">About</a>
+        </li>
+        <li
+          class="hover:bg-slate-200 hover:font-bold hover:text-black px-2 py-1 rounded-lg transition-all"
+        >
+          <a href="#experience">Experience</a>
+        </li>
+        <li
+          class="hover:bg-slate-200 hover:font-bold hover:text-black px-2 py-1 rounded-lg transition-all"
+        >
+          <a href="#contact">Contact</a>
+        </li>
+      
       </ul>
     </nav>
 
@@ -28,18 +53,26 @@
           alt="Profile"
           class="w-[30vw] lg:w-[40vh] rounded-3xl"
         />
-        <div class="text-center lg:text-start">
-          <p class="font-bold text-[6vw] lg:text-[5vw]">Napon Narkphan</p>
+        <div
+          class="text-center lg:text-start bg-blue-500/5 backdrop-blur-sm rounded-3xl p-6 shadow-lg shadow-blue-400/50 border border-blue-300"
+        >
+          <p
+            class="font-bold text-3xl lg:text-3xl xl:text-[4vw] overflow-hidden"
+          >
+            Napon Narkphan
+          </p>
           <hr class="bg-white h-[2px] mb-4" />
-          <p class="text-[4vw] font-extralight text">Full Stuck Developer</p>
-          <p class="text-[2vw] lg:text[3vw] font-black italic">
+          <p class="text-lg font-extralight lg:text-2xl xl:text-3xl">
+            Full Stuck Developer 🤓
+          </p>
+          <p class="text-base lg:text-lg xl:text-xl font-black italic">
             I'm Dek IT'23 @ KMITL
           </p>
         </div>
       </div>
       <video id="moodvideo" autoplay loop>
         <source
-          src="../source/3125448-uhd_3840_2160_25fps.mp4"
+          src="source/3125448-uhd_3840_2160_25fps.mp4"
           type="video/mp4"
         />
       </video>
@@ -51,103 +84,110 @@
 
     <section
       id="experience"
-      class="flex justify-center flex-col items-center text-center fade-in-section bg-gray-900 lg:h-[100vh] lg:gap-18 xl:gap-10"
+      class="flex justify-center flex-col items-center text-center fade-in-section bg-gray-900 lg:h-[100vh] lg:gap-10 xl:gap-0"
     >
-    <div class="head">
-        <p class="text-white text-[4vw] font-semibold pt-5 lg:pt-0 overflow-hidden">Skills</p>
-    </div>
-    
+      <div class="head">
+        <p
+          class="text-white text-[4vw] font-semibold pt-5 lg:pt-0 overflow-hidden"
+        >
+          Skills
+        </p>
+      </div>
+
       <div>
         <div class="py-10 lg:py-0">
-          <!-- <img src="https://c.tenor.com/CgGUXc-LDc4AAAAC/tenor.gif" alt="hackerman"> -->
           <div class="skill-section">
             <div
-              class="skills-containe flex flex-col text-white gap-y-10 xl:gap-y-40"
+              class="skills-containe flex flex-col text-white gap-y-10 xl:gap-y-36"
             >
               <div
                 class="flex flex-col lg:flex-row gap-x-4 lg:gap-x-7 xl:gap-x-20"
               >
-                <div class="skill-card">
+                <div
+                  class="skill-card border-b-4 border-transparent hover:border-orange-500 transition-all"
+                >
                   <img
-                    src="../source/realhtml.png"
+                    srcsource/realhtml.png"
                     class="skill-img scale-125"
                     alt=""
                   />
-                  <div class="skill-level bg-orange-500/15 border-orange-500 text-orange-500">98%</div>
+                  <div
+                    class="skill-level bg-orange-500/15 border-orange-500 text-orange-500"
+                  >
+                    99.42%
+                  </div>
                   <h1 class="skill-name">HTML</h1>
-                  <p class="skill-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur, delectus!
-                  </p>
                 </div>
-                <div class="skill-card">
+                <div
+                  class="skill-card border-b-4 border-transparent hover:border-blue-400 transition-all"
+                >
+                  <img src="source/tailwind.png" class="skill-img" alt="" />
+                  <div
+                    class="skill-level bg-blue-400/15 border-blue-400 text-blue-400"
+                  >
+                    99.42%
+                  </div>
+                  <h1 class="skill-name">TAILWIND CSS</h1>
+                </div>
+                <div
+                  class="skill-card border-b-4 border-transparent hover:border-yellow-300 transition-all"
+                >
                   <img
-                    src="../source/tailwind.png"                  
+                    src="source/javascript.png"
                     class="skill-img"
                     alt=""
                   />
-                  <div class="skill-level bg-blue-400/15 border-blue-400 text-blue-400">98%</div>
-                  <h1 class="skill-name">TAILWIND CSS</h1>
-                  <p class="skill-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur, delectus!
-                  </p>
-                </div>
-                <div class="skill-card">
-                  <img
-                    src="../source/javascript.png"
-                  class="skill-img"
-                    alt=""
-                  />
-                  <div class="skill-level bg-yellow-300/15 border-yellow-300 text-yellow-300">98%</div>
+                  <div
+                    class="skill-level bg-yellow-300/15 border-yellow-300 text-yellow-300"
+                  >
+                    99.42%
+                  </div>
                   <h1 class="skill-name">JAVASCRIPT</h1>
-                  <p class="skill-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur, delectus!
-                  </p>
                 </div>
               </div>
               <div
                 class="flex flex-col lg:flex-row gap-x-4 lg:gap-x-7 xl:gap-x-20"
               >
-                <div class="skill-card">
-                  <img
-                    src="../source/react.png"
-                  class="skill-img"
-                    alt=""
-                  />
-                  <div class="skill-level bg-cyan-400/15 border-cyan-400 text-cyan-400">98%</div>
+                <div
+                  class="skill-card border-b-4 border-transparent hover:border-cyan-400 transition-all"
+                >
+                  <img src="source/react.png" class="skill-img" alt="" />
+                  <div
+                    class="skill-level bg-cyan-400/15 border-cyan-400 text-cyan-400"
+                  >
+                    99.42%
+                  </div>
                   <h1 class="skill-name">REACT JS</h1>
-                  <p class="skill-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur, delectus!
-                  </p>
                 </div>
-                <div class="skill-card">
+                <div
+                  class="skill-card border-b-4 border-transparent hover:border-white transition-all"
+                >
                   <img
-src="../source/icons8-nextjs-220.png"
-                  class="skill-img"
+                    src="source/icons8-nextjs-220.png"
+                    class="skill-img"
                     alt=""
                   />
-                  <div class="skill-level bg-white/15 border-white-500 text-white-500">98%</div>
+                  <div
+                    class="skill-level bg-white/15 border-white-500 text-white-500"
+                  >
+                    99.42%
+                  </div>
                   <h1 class="skill-name">NEXT JS</h1>
-                  <p class="skill-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur, delectus!
-                  </p>
                 </div>
-                <div class="skill-card">
+                <div
+                  class="skill-card border-b-4 border-transparent hover:border-green-400 transition-all"
+                >
                   <img
-src="../source/image-removebg-preview.png"
-                  class="skill-img"
+                    src="source/image-removebg-preview.png"
+                    class="skill-img"
                     alt=""
                   />
-                  <div class="skill-level bg-green-400/15 border-green-400 text-green-400">98%</div>
+                  <div
+                    class="skill-level bg-green-400/15 border-green-400 text-green-400"
+                  >
+                    99.42%
+                  </div>
                   <h1 class="skill-name">NODE JS</h1>
-                  <p class="skill-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur, delectus!
-                  </p>
                 </div>
               </div>
             </div>
@@ -157,9 +197,55 @@ src="../source/image-removebg-preview.png"
     </section>
 
     <section id="contact" class="parallax section-full fade-in-section">
+      <div
+        class="text-white gap-8 intro-box flex justify-center items-center flex-col lg:flex-row"
+      >
+        <img
+          src="https://c.tenor.com/CgGUXc-LDc4AAAAC/tenor.gif"
+          alt="hackerman"
+          class="w-[30vw] lg:w-[40vh] rounded-3xl shadow-green-500/50"
+        />
+
+        <div
+          class="text-center lg:text-start bg-blue-500/5 backdrop-blur-sm rounded-3xl px-5 lg:px-32 xl:px-40 shadow-lg shadow-blue-400/50 border border-blue-300"
+        >
+          <p class="font-bold text-[5vw] lg:text-[4vw] text-center">Contact</p>
+          <p class="font-bold text-[4vw] lg:text-[3vw] text-center">
+            napnarkp(Tong)
+          </p>
+          <div
+            class="mt-5 flex flex-col gap-y-3 text-center text-2xl font-normal"
+          >
+            <i
+              class="fa-brands fa-facebook overflow-hidden hover:font-bold p-2 border-2 border-transparent hover:border-white rounded-xl transition-all"
+              ><a href="https://www.facebook.com/napon.narkphan" class="px-5"
+                >Napon Narkphan</a
+              ></i
+            >
+            <i
+              class="fa-regular fa-envelope overflow-hidden hover:font-bold p-2 border-2 border-transparent hover:border-white rounded-xl transition-all"
+              ><a href="https://www.facebook.com/napon.narkphan" class="px-5"
+                >guynopan@gmail.com</a
+              ></i
+            >
+            <i
+              class="fa-brands fa-instagram overflow-hidden hover:font-bold p-2 border-2 border-transparent hover:border-white rounded-xl transition-all"
+              ><a href="https://www.facebook.com/napon.narkphan" class="px-5"
+                >nxgs_np</a
+              ></i
+            >
+            <i
+              class="fa-brands fa-github overflow-hidden hover:font-bold p-2 border-2 border-transparent hover:border-white rounded-xl transition-all"
+              ><a href="https://www.facebook.com/napon.narkphan" class="px-5"
+                >Gxnp</a
+              ></i
+            >
+          </div>
+        </div>
+      </div>
       <video id="moodvideo" autoplay loop>
         <source
-          src="../source/3125448-uhd_3840_2160_25fps.mp4"
+          src="source/3125448-uhd_3840_2160_25fps.mp4"
           type="video/mp4"
         />
       </video>
